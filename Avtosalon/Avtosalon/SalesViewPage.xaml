@@ -1,4 +1,4 @@
-﻿<Page x:Class="Avtosalon.ManagerAutoListPage"
+﻿<Page x:Class="Avtosalon.SalesViewPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Avtosalon"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ManagerAutoListPage" IsVisibleChanged="Page_IsVisibleChanged">
+      Title="SalesViewPage">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -16,46 +16,14 @@
             <RowDefinition Height="auto"></RowDefinition>
         </Grid.RowDefinitions>
 
+        
 
-        <Button Content="Добавить клиента" Name="ClientAddButton" Click="ClientAddButton_Click" Margin="5" Width="200" Height="35" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="1"/>
-
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Grid.Row="3" Margin="5">
-            <TextBlock Name="TBCount" FontSize="20" Height="25"></TextBlock>
-            <TextBlock Name="TBAllRecords" FontSize="20" Height="25"></TextBlock>
-            <Button Name="LeftDirButton" Content="&lt;" Width="20" Height="20" Click="LeftDirButton_Click"></Button>
-            <ListBox FontSize="20" Name="PageListBox" MouseUp="PageListBox_MouseUp">
-                <ListBox.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Horizontal"/>
-                    </ItemsPanelTemplate>
-                </ListBox.ItemsPanel>
-            </ListBox>
-            <Button Name="RightDirButton" Content="&gt;" Width="20" Height="20" Click="RightDirButton_Click"></Button>
-        </StackPanel>
-
-        <WrapPanel Orientation="Horizontal" HorizontalAlignment="Center">
-            <StackPanel Margin="10" Orientation="Horizontal" Grid.Row="0">
-                <TextBox Name="TBoxSearch" TextChanged="TBoxSearch_TextChanged" Margin="5" Width="300" FontSize="20"></TextBox>
-                <ComboBox Name="SortCombo" SelectionChanged="SortCombo_SelectionChanged"  Margin="5" FontSize="20" Width="200">
-                    <TextBlock>По умолчанию</TextBlock>
-                    <TextBlock>По убыванию</TextBlock>
-                    <TextBlock>По возрастанию</TextBlock>
-                </ComboBox>
-                <ComboBox Name="ComboFilter" SelectionChanged="ComboFilter_SelectionChanged"  Margin="5" FontSize="20" Width="200">
-                    <TextBlock>Все</TextBlock>
-                    <TextBlock>До 500 тыс.</TextBlock>
-                    <TextBlock>От 500 тыс. до 1 млн.</TextBlock>
-                    <TextBlock>От 1 млн.</TextBlock>
-
-                </ComboBox>
-            </StackPanel>
-        </WrapPanel>
-
-        <ListView Name="CarsListView" Grid.Row="2" >
+        <ListView Name="SalesListView" Grid.Row="2" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid>
                         <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                             <ColumnDefinition></ColumnDefinition>
                         </Grid.ColumnDefinitions>
@@ -79,6 +47,8 @@
                                 </Binding>
                             </Image.Source>
                         </Image>
+
+                        <!--Данные автомобиля-->
 
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Column="1" Grid.Row="0">
                             <TextBlock Text="{Binding CarMake, StringFormat={}{0:0} | }" FontSize="20"></TextBlock>
@@ -106,14 +76,26 @@
                             <TextBlock Text="В наличии: " FontSize="20"></TextBlock>
                             <TextBlock Text="{Binding Count, StringFormat={}{0:0} шт.}" FontSize="20"></TextBlock>
                         </StackPanel>
-                        <StackPanel Grid.Row="5" Grid.Column="1" HorizontalAlignment="Left" Orientation="Horizontal">
-                            <Button Content="Продать" Name="SaleButton" Click="SaleButton_Click"  Margin="5"></Button>
-                        </StackPanel>
+                        
+                        <!--Данные клиента-->
 
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5" Grid.Column="2" Grid.Row="0">
+                            <TextBlock Text="Фамилия:" Margin="5"  FontSize="20" HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Surname}" Margin="5" FontSize="20"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5" Grid.Column="2" Grid.Row="1">
+                            <TextBlock Text="Имя:" Margin="5"  FontSize="20" HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Name}" Margin="5" FontSize="20"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="5" Grid.Column="2" Grid.Row="2">
+                            <TextBlock Text="Отчество:" Margin="5"  FontSize="20" HorizontalAlignment="Right"/>
+                            <TextBlock Text="{Binding Patronymic}" Margin="5" FontSize="20"/>
+                        </StackPanel>
 
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
+
     </Grid>
 </Page>

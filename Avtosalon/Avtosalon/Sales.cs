@@ -22,11 +22,87 @@ namespace Avtosalon
         public virtual Cars Cars { get; set; }
         public virtual Clients Clients { get; set; }
 
-        public string ColorSale
+        public string CarMake
+        {
+            get
+            {
+                return Cars.CarMake;
+            }
+        }
+        public string Model
+        {
+            get
+            {
+                return Cars.Model;
+            }
+        }
+        public decimal Power
+        {
+            get
+            {
+                return Cars.Power;
+            }
+        }
+        public decimal Volume
+        {
+            get
+            {
+                return Cars.Volume;
+            }
+        }
+        public int Cost
+        {
+            get
+            {
+                return Cars.Cost;
+            }
+        }
+        public string Photo
+        {
+            get
+            {
+                return Cars.Photo;
+            }
+        }
+        public string CarColor
         {
             get
             {
                 return Cars.CarColor;
+            }
+        }
+        public string CarKPP
+        {
+            get
+            {
+                return Cars.CarKPP;
+            }
+        }
+        public string CarWheelDrive
+        {
+            get {
+                return Cars.CarWheelDrive;
+            }
+        }
+        public string Name
+        {
+            get
+            {
+                return Clients.Firstname;
+            }
+        }
+        public string Surname
+        {
+            get
+            {
+                return Clients.Surname;
+            }
+        }
+        public string Patronymic
+        {
+            get
+            {
+                return Clients.Patronymic;
             }
         }
     }

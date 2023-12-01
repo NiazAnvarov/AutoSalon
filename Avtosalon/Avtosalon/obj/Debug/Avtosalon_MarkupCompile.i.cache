@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\App.xaml
-8990564203
+10244052843
 2-1231313917
-251090155479
+27-833922763
 19-779995219
-AddEditPage.xaml;AuthPage.xaml;AutoListPage.xaml;ClientAutoListPage.xaml;EmployAythPage.xaml;MainWindow.xaml;ManagerAutoListPage.xaml;SalePage.xaml;
+AddEditPage.xaml;AuthPage.xaml;AutoListPage.xaml;ClientAddPage.xaml;ClientAutoListPage.xaml;EmployAythPage.xaml;MainWindow.xaml;ManagerAutoListPage.xaml;SalePage.xaml;SalesViewPage.xaml;
 
-False
+True
 

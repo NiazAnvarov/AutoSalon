@@ -24,8 +24,6 @@
     <Property Name="Surname" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Firstname" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Patronymic" Type="nvarchar(max)" />
-    <Property Name="Login" Type="nvarchar(max)" />
-    <Property Name="Password" Type="nvarchar(max)" />
   </EntityType>
   <EntityType Name="ColorTable">
     <Key>

@@ -22,7 +22,6 @@ D:\Учёба\Внедрение и поддержка компьютерных 
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\Avtosalon_Content.g.cs
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\AutoListPage.baml
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\Avtosalon.csproj.CopyComplete
-D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\Avtosalon.csproj.AssemblyReference.cache
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\AddEditPage.g.cs
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\AddEditPage.baml
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\SalePage.g.cs
@@ -35,3 +34,8 @@ D:\Учёба\Внедрение и поддержка компьютерных 
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\ManagerAutoListPage.baml
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\ClientAutoListPage.g.cs
 D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\ClientAutoListPage.baml
+D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\ClientAddPage.g.cs
+D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\ClientAddPage.baml
+D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\SalesViewPage.g.cs
+D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\SalesViewPage.baml
+D:\Учёба\Внедрение и поддержка компьютерных систем\Project\Avtosalon\Avtosalon\obj\Debug\Avtosalon.csproj.AssemblyReference.cache

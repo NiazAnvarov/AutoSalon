@@ -24,8 +24,6 @@ namespace Avtosalon
         public string Surname { get; set; }
         public string Firstname { get; set; }
         public string Patronymic { get; set; }
-        public string Login { get; set; }
-        public string Password { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sales> Sales { get; set; }

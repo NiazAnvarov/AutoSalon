@@ -218,6 +218,16 @@ namespace Avtosalon
         {
             Manager.MainFrame.Navigate(new SalePage((sender as Button).DataContext as Cars));
         }
+
+        private void ClientAddButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new ClientAddPage());
+        }
+
+        private void SaleViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.Navigate(new SalesViewPage());
+        }
     }
 
 }

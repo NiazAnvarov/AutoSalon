@@ -21,7 +21,9 @@ namespace Avtosalon
         public static AutoSalonEntities GetContext()
         {
             if (_context == null)
+            {
                 _context = new AutoSalonEntities();
+            }
 
             return _context;
         }

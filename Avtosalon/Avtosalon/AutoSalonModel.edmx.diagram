@@ -4,9 +4,9 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="259140e6621f4a5a8e6fc24d974000ea" Name="Diagram1">
+      <Diagram DiagramId="b0ba96da9eb54b97a2a20ab076477ac9" Name="Diagram1">
         <EntityTypeShape EntityType="AutoSalonModel.Cars" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="AutoSalonModel.Clients" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AutoSalonModel.Clients" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="AutoSalonModel.ColorTable" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
         <EntityTypeShape EntityType="AutoSalonModel.Employees" Width="1.5" PointX="8" PointY="7.375" IsExpanded="true" />
         <EntityTypeShape EntityType="AutoSalonModel.KPPTable" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />

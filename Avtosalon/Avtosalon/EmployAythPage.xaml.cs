@@ -22,7 +22,8 @@ namespace Avtosalon
     {
         public EmployAythPage()
         {
-            InitializeComponent(); 
+            InitializeComponent();
+
         }
 
         private void EmplAuthButton_Click(object sender, RoutedEventArgs e)
@@ -38,11 +39,13 @@ namespace Avtosalon
                 if(user.Count != 0)
                 {
                     MessageBox.Show("Успешный вход в систему");
+                    EmployAuthPaswBox.Text = "";
                     Manager.MainFrame.Navigate(new AutoListPage());
                 }
                 else
                 {
                     MessageBox.Show("Успешный вход в систему");
+                    EmployAuthPaswBox.Text = "";
                     Manager.MainFrame.Navigate(new ManagerAutoListPage());
                 }
                 
